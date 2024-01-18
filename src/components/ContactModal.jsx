@@ -37,7 +37,7 @@ function ContactModal({ isModalOpen, setIsModalOpen }) {
               <textarea
                 name=""
                 id=""
-                cols="30"
+                cols="20"
                 rows="10"
                 placeholder="Message"
                 className="bg-[#1c1c1c]/[0.5] backdrop-blur-sm rounded-[8px] px-[15px] py-[10px] text-[#fff] border border-[#fff] border-opacity-15"
