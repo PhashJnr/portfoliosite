@@ -8,7 +8,7 @@ import previewicon from "../assets/preview-svg.svg";
 
 function ResumeModal({ isResumeModalOpen, setIsResumeModalOpen }) {
   const handleDownload = () => {
-    window.open("/public/Resume/Phash-Resume.pdf", "_blank");
+    window.open("/Resume/Phash-Resume.pdf", "_blank");
   };
 
   const [showPdf, setShowPdf] = useState(false);
@@ -58,7 +58,7 @@ function ResumeModal({ isResumeModalOpen, setIsResumeModalOpen }) {
           />
           <iframe
             className=" w-[100%] h-[100%]  z-40"
-            src="/public/Resume/Phash-Resume.pdf"
+            src="/Resume/Phash-Resume.pdf"
             title="Phash Resume"
           ></iframe>
         </div>

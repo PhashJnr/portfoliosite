@@ -2,36 +2,36 @@
   {
     "projectName": "Omnifood",
     "projectDescription": "We are a technology company first, but with a major focus on consumer well-being through a healthy diet.",
-    "mobileImage": "/public/img/omnifood-mobile.png",
-    "desktopImage": "/public/img/omnifood-desktop.png",
-    "tabletImage": "/public/img/omnifood-tablet.png",
+    "mobileImage": "/img/omnifood-mobile.png",
+    "desktopImage": "/img/omnifood-desktop.png",
+    "tabletImage": "/img/omnifood-tablet.png",
     "projectLink": "https://omnifood-phash.netlify.app/",
     "projectGithub": "https://github.com/PhashJnr/ominifood"
   },
   {
     "projectName": "searchHub",
     "projectDescription": "searchHub is a Real-Time ecommerce search engine that allows users to search for products from popular ecommerce sites and also add them to wishlist for later use.",
-    "mobileImage": "/public/img/searchHub-mobile.png",
-    "desktopImage": "/public/img/searchHub-desktop.png",
-    "tabletImage": "/public/img/searchHub-tablet.png",
+    "mobileImage": "/img/searchHub-mobile.png",
+    "desktopImage": "/img/searchHub-desktop.png",
+    "tabletImage": "/img/searchHub-tablet.png",
     "projectLink": "https://searchhub.vercel.app/",
     "projectGithub": "https://github.com/PhashJnr/searchHub"
   },
   {
     "projectName": "beeSmart",
     "projectDescription": "beesmart is a quiz app that tests the knowledege of frontend web developers on the basics of HTML, CSS and JavaScript.",
-    "mobileImage": "/public/img/beeSmart-mobile.jpeg",
-    "desktopImage": "/public/img/beeSmart-desktop.jpeg",
-    "tabletImage": "/public/img/beeSmart-tablet.jpeg",
+    "mobileImage": "/img/beeSmart-mobile.jpeg",
+    "desktopImage": "/img/beeSmart-desktop.jpeg",
+    "tabletImage": "/img/beeSmart-tablet.jpeg",
     "projectLink": "https://bee-smart.vercel.app/",
     "projectGithub": "https://github.com/PhashJnr/beeSmart"
   },
   {
     "projectName": "Connect With Temi",
     "projectDescription": "Connect with Temi is a small business landing page that I built for a friend that owns a internet and cable TV subsription business.",
-    "mobileImage": "/public/img/connectWithTemi-mobile.png",
-    "desktopImage": "/public/img/connectWithTemi-desktop.png",
-    "tabletImage": "/public/img/connectWithTemi-tablet.png",
+    "mobileImage": "/img/connectWithTemi-mobile.png",
+    "desktopImage": "/img/connectWithTemi-desktop.png",
+    "tabletImage": "/img/connectWithTemi-tablet.png",
     "projectLink": "https://connect-with-temi.vercel.app/",
     "projectGithub": ""
   }

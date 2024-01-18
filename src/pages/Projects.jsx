@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import gitLogo from "../assets/github-logo.svg";
 import diagonalArrow from "../assets/diagonal-arrow.svg";
+// import desktopImage from "../data/data.json";
+// import mobileImage from "../data/data.json";
+// import tabletImage from "../data/data.json";
 import data from "../data/data.json";
 import Button from "../components/Button";
 import ResumeModal from "../components/ResumeModal";
@@ -14,6 +17,7 @@ function Projects({
   isResumeModalOpen,
   isModalOpen,
 }) {
+  console.log(data);
   return (
     <>
       <Navbar
