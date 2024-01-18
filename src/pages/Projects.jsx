@@ -20,7 +20,7 @@ function Projects({
         setIsModalOpen={setIsModalOpen}
         setIsResumeModalOpen={setIsResumeModalOpen}
       />
-      <main className="main mt-[90px] overflow-hidden relative z-[-1]  ">
+      <main className="main mt-[90px] overflow-hidden relative z-[1]  ">
         <div className="container mx-auto px-6">
           <div className="px-8 py-4 bg-[#191919] w-fit mx-auto rounded-[9px]">
             <h2 className="text-4xl text-[#fff]  font-bold  text-center ">
