@@ -93,7 +93,9 @@ function Navbar({ setIsModalOpen, setIsResumeModalOpen }) {
           isOpen ? "visible" : "hidden"
         }  left-0`}
       >
-        <div className={`navlink py-4 bg-[#1C1C1C]/[0.8] h-full `}>
+        <div
+          className={`navlink py-4 bg-[#1C1C1C]/[0.8] h-full rounded-[6px] `}
+        >
           <ul className="flex flex-col justify-center items-center  gap-[10px]">
             <NavLink
               to="/"

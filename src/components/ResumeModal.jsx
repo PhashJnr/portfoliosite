@@ -8,7 +8,12 @@ import previewicon from "../assets/preview-svg.svg";
 
 function ResumeModal({ isResumeModalOpen, setIsResumeModalOpen }) {
   const handleDownload = () => {
-    window.open("/Resume/Phash-Resume.pdf", "_blank");
+    window.open(
+      "https://1drv.ms/b/s!AsRX_80uUuXRvjSwwRxfsEC3jezP?e=DWZEK8",
+      "_blank",
+      "noopener noreferrer",
+      "download"
+    );
   };
 
   const [showPdf, setShowPdf] = useState(false);
@@ -50,16 +55,20 @@ function ResumeModal({ isResumeModalOpen, setIsResumeModalOpen }) {
         </div>
       </div>
       {showPdf && (
-        <div className="absolute flex-grow px-11 py-5 bg-[#fff]/[0.5] w-[80vw] h-full backdrop-blur-[2px] z-40">
+        <div className="absolute flex-grow px-3 lg:px-11 py-5 bg-[#fff]/[0.5] w-[80vw] h-full backdrop-blur-[2px] z-40">
           <Button
             onClick={() => setShowPdf(false)}
             text="&larr; Back"
             customStyle="bg-frontend mb-[20px] text-[#101111] btnHireMe  hover:opacity-80 "
           />
           <iframe
-            className=" w-[100%] h-[100%]  z-40"
-            src="https://drive.google.com/file/d/1EfAw0I9B1JH0Rqkv9894_B80hGeVjUQ3/view?usp=drive_link"
             title="Phash Resume"
+            src="https://onedrive.live.com/embed?resid=D1E5522ECDFF57C4%217988&authkey=!ANGco25D2UwnW1M&em=2"
+            // width="476"
+            // height="288"
+            className="w-full h-full z-40"
+            // frameborder="0"
+            scrolling="no"
           ></iframe>
         </div>
       )}
