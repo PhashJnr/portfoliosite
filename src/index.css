@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: #101111; */
+  /* font-family: "Lato", sans-serif; */
+  background-size: 200px 100px;
+  background-image: linear-gradient(to right, #ffffff24 1px, transparent 0.7px),
+    linear-gradient(to bottom, #ffffff24 1px, transparent 0.7px),
+    linear-gradient(#101111, #101111);
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: 100px 50px;
+    background-image: linear-gradient(
+        to right,
+        #ffffff28 0.6px,
+        transparent 0.5px
+      ),
+      linear-gradient(to bottom, #ffffff27 0.7px, transparent 0.5px),
+      linear-gradient(#101111, #101111);
+  }
+}
+
+.navBorder {
+  background: linear-gradient(to right, #7a87fb, #ffd49c);
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.navBorderSm {
+  background: linear-gradient(to right, #7a87fb, #ffd49c);
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.imgCtms::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  /* background: #186f65; */
+  background: linear-gradient(75deg, #ffd49c, #7a87fb);
+
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.active-link {
+  position: relative;
+  /* color: #186f65; */
+  background-color: #292929;
+  border-radius: 8px;
+  /* padding: 8px; */
+}
+
+.btnHireMe {
+  /* background-image: linear-gradient(to right, #7a87fb, #ffd49c); */
+  /* position: relative; */
+  /* overflow: hidden; */
+  background: linear-gradient(to right, #ffd49c, #7a87fb);
+}
+
+.btnDemo {
+  overflow: hidden;
+  background: linear-gradient(to right, #ffd49c, #7a87fb);
+}
+
+.hireMeBorder,
+.browseProjectBorder,
+.btnSourceCodeBorder,
+.socialsBorder,
+.mobileNavBorder {
+  background: linear-gradient(
+    to right,
+    #7a87fb,
+    #ffd49c
+  ); /* Replace with your desired colors */
+  padding: 2px; /* Adjust based on your desired border width */
+  border-radius: 7px;
+}
+
+/* border-2 border-gradient-to-r from-[#7A87FB] to-[#FFD49C] */
+
+/* .btnHireMe::before {
+  content: "";
+  position: absolute;
+  top: -4px; 
+  left: -4px; 
+  right: -4px; 
+  bottom: -4px; 
+  background: linear-gradient(
+    to right,
+    #7a87f8,
+    #ffd49c
+  ); 
+  z-index: -1;
+} */

@@ -1,0 +1,12 @@
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -6px; /* Adjust this value to position the dot */
+  left: 50%; /* Center the dot */
+  transform: translateX(-50%);
+  width: 5px; /* Width of the dot */
+  height: 5px; /* Height of the dot */
+  background-color: #186f65;
+  border-radius: 50%; /* Shape the dot into a circle */
+  margin-top: 8px;
+}
