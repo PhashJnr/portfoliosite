@@ -58,7 +58,7 @@ function ResumeModal({ isResumeModalOpen, setIsResumeModalOpen }) {
           />
           <iframe
             className=" w-[100%] h-[100%]  z-40"
-            src="/Resume/Phash-Resume.pdf"
+            src="https://drive.google.com/file/d/1EfAw0I9B1JH0Rqkv9894_B80hGeVjUQ3/view?usp=drive_link"
             title="Phash Resume"
           ></iframe>
         </div>

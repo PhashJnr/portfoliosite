@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import chatlogo from "../assets/chat-logo.svg";
@@ -116,23 +116,23 @@ function Navbar({ setIsModalOpen, setIsResumeModalOpen }) {
           </ul>
 
           <div className="flex gap-[44px] mt-2 justify-center items-center">
-            <Link to="/">
-              <img
-                src={chatlogo}
-                onClick={() => setIsModalOpen(true)}
-                className="h-[24px] w-[24px] hover:opacity-70"
-                alt="chat logo"
-              />
-            </Link>
+            {/* <Link to="/"> */}
+            <img
+              src={chatlogo}
+              onClick={() => setIsModalOpen(true)}
+              className="h-[24px] w-[24px] hover:opacity-70"
+              alt="chat logo"
+            />
+            {/* </Link> */}
 
-            <Link to="/">
-              <img
-                onClick={() => setIsResumeModalOpen(true)}
-                src={cvlogo}
-                className="h-[24px] w-[24px] hover:opacity-70"
-                alt="cv icon"
-              />
-            </Link>
+            {/* <Link to="/"> */}
+            <img
+              onClick={() => setIsResumeModalOpen(true)}
+              src={cvlogo}
+              className="h-[24px] w-[24px] hover:opacity-70"
+              alt="cv icon"
+            />
+            {/* </Link> */}
           </div>
         </div>
       </div>

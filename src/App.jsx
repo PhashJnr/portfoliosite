@@ -24,7 +24,7 @@ function App() {
           }
         />
         <Route
-          path="/about"
+          path="about"
           element={
             <About
               setIsModalOpen={setIsModalOpen}
@@ -35,7 +35,7 @@ function App() {
           }
         />
         <Route
-          path="/projects"
+          path="projects"
           element={
             <Projects
               setIsModalOpen={setIsModalOpen}
