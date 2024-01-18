@@ -8,12 +8,7 @@ import previewicon from "../assets/preview-svg.svg";
 
 function ResumeModal({ isResumeModalOpen, setIsResumeModalOpen }) {
   const handleDownload = () => {
-    window.open(
-      "https://1drv.ms/b/s!AsRX_80uUuXRvjSwwRxfsEC3jezP?e=DWZEK8",
-      "_blank",
-      "noopener noreferrer",
-      "download"
-    );
+    window.open("/Resume/Phash-Resume.pdf", "_blank");
   };
 
   const [showPdf, setShowPdf] = useState(false);
