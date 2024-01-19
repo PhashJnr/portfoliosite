@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 import ContactModal from "../components/ContactModal";
 import ResumeModal from "../components/ResumeModal";
 import reacticon from "../assets/react-svg.svg";
@@ -29,10 +30,10 @@ function HomePage({
         setIsResumeModalOpen={setIsResumeModalOpen}
       />
 
-      <main className=" text-[#FAFAFA] mt-[90px] z-[3] relative ">
+      <main className="text-[#FAFAFA] mt-[100px] sm:mt-[170px] lg:mt-[90px] z-[3] flex items-center relative sm:h-[80dvh]">
         <div className="container mx-auto lg:max-w-[1200px] px-[16px]">
-          <div className="flex  flex-col sm:flex-row justify-between gap-y-8 items-center h-[100vh]">
-            <div className="text-left relative bg-background/[0.4] border border-[#fff] border-opacity-15 rounded-[5px] backdrop-blur-sm sm:w-[500px] p-5 pl-[50px] sm:pl-[40px] py-7  pr-[20px] ">
+          <div className="flex flex-col sm:flex-row justify-between gap-y-8 items-center ">
+            <div className="text-left relative bg-background/[0.4] border border-[#fff] border-opacity-15 rounded-[5px] backdrop-blur-sm sm:w-[500px] p-5 pl-[50px] sm:pl-[40px] py-7 pr-[20px] ">
               <p className=" font-light text-[1.6rem] mb-[10px]  ">
                 Hey👋🏽, It&apos;s{" "}
                 <span className="text-[#b3b3b3] font-normal ">Phash</span>
@@ -198,20 +199,20 @@ function HomePage({
               </motion.div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.5,
-                ease: "easeOut",
-                delay: 0.2,
-              }}
-              className="img relative  bg-background/[0.5] backdrop-blur-sm border border-[#fff] border-opacity-15 w-fit rounded-[6px]  "
-            >
-              <div className="imgCtms ">
+            <div className="img relative  bg-background/[0.5] backdrop-blur-sm border border-[#fff] border-opacity-15 w-fit rounded-[6px]  ">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                  delay: 0.2,
+                }}
+                className="imgCtms "
+              >
                 <img src={phashImg} alt="phash" />
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </main>
@@ -221,6 +222,7 @@ function HomePage({
         isResumeModalOpen={isResumeModalOpen}
         setIsResumeModalOpen={setIsResumeModalOpen}
       />
+      <Footer />
     </>
   );
 }

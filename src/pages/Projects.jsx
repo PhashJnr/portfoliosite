@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import gitLogo from "../assets/github-logo.svg";
 import diagonalArrow from "../assets/diagonal-arrow.svg";
-// import desktopImage from "../data/data.json";
-// import mobileImage from "../data/data.json";
-// import tabletImage from "../data/data.json";
 import data from "../data/data.json";
 import Button from "../components/Button";
 import ResumeModal from "../components/ResumeModal";
@@ -41,6 +39,7 @@ function Projects({
         isResumeModalOpen={isResumeModalOpen}
         setIsResumeModalOpen={setIsResumeModalOpen}
       />
+      <Footer />
     </>
   );
 }
@@ -54,11 +53,11 @@ function Project() {
       {projects.map((project, index) => (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.5,
+            duration: 0.3,
             ease: "easeOut",
-            delay: 0.5,
+            delay: 0.2,
           }}
           key={index}
           className="flex text-[#fff] sm:text-[#FAFAFA] border border-[#fff] border-opacity-15 shadow-lg flex-col w-fit py-[30px] px-[15px] mx-auto bg-[#151515]/[0.5] backdrop-blur-sm rounded-[16px] md:flex-row  justify-center items-center mb-[4rem]"

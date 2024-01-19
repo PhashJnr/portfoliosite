@@ -88,7 +88,14 @@ function Navbar({ setIsModalOpen, setIsResumeModalOpen }) {
         </div>
       </div>
 
-      <div
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 0.5,
+          ease: "easeOut",
+          delay: 0.2,
+        }}
         className={`navBorderSm w-full h-[100vh]  sm:hidden absolute top-[70px]  ${
           isOpen ? "visible" : "hidden"
         }  left-0`}
@@ -117,27 +124,23 @@ function Navbar({ setIsModalOpen, setIsResumeModalOpen }) {
             </NavLink>
           </ul>
 
-          <div className="flex gap-[44px] mt-2 justify-center items-center">
-            {/* <Link to="/"> */}
+          <div className="flex gap-[49px] mt-7 justify-center items-center">
             <img
               src={chatlogo}
               onClick={() => setIsModalOpen(true)}
               className="h-[24px] w-[24px] hover:opacity-70"
               alt="chat logo"
             />
-            {/* </Link> */}
 
-            {/* <Link to="/"> */}
             <img
               onClick={() => setIsResumeModalOpen(true)}
               src={cvlogo}
               className="h-[24px] w-[24px] hover:opacity-70"
               alt="cv icon"
             />
-            {/* </Link> */}
           </div>
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 }
