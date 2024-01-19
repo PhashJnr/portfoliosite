@@ -10,6 +10,22 @@ import cancelicon from "../assets/cancel-button-svg.svg";
 function ContactModal({ isModalOpen, setIsModalOpen }) {
   const [state, handleSubmit] = useForm("moqgvoqp");
   const [showAlert, setShowAlert] = useState(false);
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const isFormComplete = Object.values(formState).every(
+    (field) => field !== ""
+  );
+
+  const handleInputChange = (e) => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   if (showAlert) {
     return (
@@ -63,33 +79,40 @@ function ContactModal({ isModalOpen, setIsModalOpen }) {
           <form onSubmit={handleSubmit} className="mt-[20px]">
             <div className="flex flex-col gap-4">
               <label htmlFor="name" className="text-[#b3b3b3] mb-[-10px] ">
-                Name
+                Name <span className="">*</span>
               </label>
               <input
                 id="name"
                 name="name"
                 type="text"
+                onChange={handleInputChange}
                 placeholder="Name"
                 required
                 className="bg-[#1c1c1c]/[0.5] backdrop-blur-sm rounded-[8px] px-[15px] py-[10px] text-[#fff] border border-[#fff] border-opacity-15"
               />
 
               <label htmlFor="email" className="text-[#b3b3b3] mb-[-10px] ">
-                Email
+                Email <span className="">*</span>
               </label>
               <input
                 id="email"
                 name="email"
+                onChange={handleInputChange}
                 required
                 type="email"
                 placeholder="Email"
                 className="bg-[#1c1c1c]/[0.5] backdrop-blur-sm rounded-[8px] px-[15px] py-[10px] text-[#fff] border border-[#fff] border-opacity-15 "
               />
+
+              <label htmlFor="message" className="text-[#b3b3b3] mb-[-10px] ">
+                Message <span className="">*</span>
+              </label>
               <textarea
                 name="message"
                 id=""
                 cols="20"
                 rows="10"
+                onChange={handleInputChange}
                 placeholder="Message"
                 required
                 className="bg-[#1c1c1c]/[0.5] backdrop-blur-sm rounded-[8px] px-[15px] py-[10px] text-[#fff] border border-[#fff] border-opacity-15"
@@ -107,6 +130,7 @@ function ContactModal({ isModalOpen, setIsModalOpen }) {
                 }}
                 text="Send Message"
                 customStyle="bg-frontend mx-auto text-[#101111] btnHireMe  hover:opacity-80 "
+                disabled={!isFormComplete}
               />
             </div>
           </form>
