@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          index
           element={
             <HomePage
               setIsModalOpen={setIsModalOpen}
