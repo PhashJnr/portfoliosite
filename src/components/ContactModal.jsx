@@ -2,10 +2,10 @@
 /* eslint-disable react/prop-types */
 import { useForm } from "@formspree/react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import Button from "../components/Button";
 import Alert from "@mui/material/Alert";
 import cancelicon from "../assets/cancel-button-svg.svg";
-import { useState } from "react";
 
 function ContactModal({ isModalOpen, setIsModalOpen }) {
   const [state, handleSubmit] = useForm("moqgvoqp");
