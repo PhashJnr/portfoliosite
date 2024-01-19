@@ -27,7 +27,7 @@ function ContactModal({ isModalOpen, setIsModalOpen }) {
     });
   };
 
-  if (showAlert) {
+  if (state.succeeded && showAlert) {
     return (
       <>
         <Alert
