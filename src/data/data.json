@@ -34,5 +34,14 @@
     "tabletImage": "/img/connectWithTemi-tablet.png",
     "projectLink": "https://connect-with-temi.vercel.app/",
     "projectGithub": ""
+  },
+  {
+    "projectName": "ClearLink",
+    "projectDescription": "ClearLink is a landing page for a fictional company that focuses on providing high-quality video, screen-sharing app for it's user.",
+    "mobileImage": "/img/ClearLink-mobile.png",
+    "desktopImage": "/img/ClearLink-desktop.png",
+    "tabletImage": "/img/ClearLink-tablet.png",
+    "projectLink": "https://clearlink-phash.vercel.app/",
+    "projectGithub": "https://github.com/PhashJnr/clearlink"
   }
 ]

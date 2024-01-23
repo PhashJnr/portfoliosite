@@ -55,17 +55,57 @@ function Project() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.3,
+            duration: 0.2,
             ease: "easeOut",
             delay: 0.2,
+            type: "spring",
           }}
           key={index}
           className="flex text-[#fff] sm:text-[#FAFAFA] border border-[#fff] border-opacity-15 shadow-lg flex-col w-fit py-[30px] px-[15px] mx-auto bg-[#151515]/[0.5] backdrop-blur-sm rounded-[16px] md:flex-row  justify-center items-center mb-[4rem]"
         >
           <div className="sm:w-[450px] self-center sm:px-6 ">
-            <h2 className="text-2xl">{project.projectName}</h2>
-            <p>{project.projectDescription}</p>
-            <div className="btn flex items-center gap-4 mt-5">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.3,
+                ease: "easeOut",
+                delay: 0.3,
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+              }}
+              className="text-2xl"
+            >
+              {project.projectName}
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.45,
+                ease: "easeOut",
+                delay: 0.45,
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+              }}
+            >
+              {project.projectDescription}
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+                delay: 0.6,
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+              }}
+              className="btn flex items-center gap-4 mt-5"
+            >
               <a
                 href={project.projectLink}
                 target="_blank"
@@ -87,20 +127,44 @@ function Project() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="btnSourceCodeBorder">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.75,
+                      ease: "easeOut",
+                      delay: 0.75,
+                      type: "spring",
+                      stiffness: 100,
+                      damping: 10,
+                    }}
+                    className="btnSourceCodeBorder"
+                  >
                     <Button
                       text={"Source Code"}
                       imgSrc={gitLogo}
                       altText={"GitHub Logo"}
                       customStyle="bg-background"
                     />
-                  </div>
+                  </motion.div>
                 </a>
               )}
-            </div>
+            </motion.div>
           </div>
 
-          <div className="img ">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              ease: "easeOut",
+              delay: 0.9,
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+            }}
+            className="img "
+          >
             <img
               src={project.desktopImage}
               className="h-[350px] hidden  rounded-[8px] lg:block "
@@ -116,7 +180,7 @@ function Project() {
               className="h-[350px] hidden md:block lg:hidden "
               alt="tabletPreview"
             />
-          </div>
+          </motion.div>
         </motion.div>
       ))}
     </div>
